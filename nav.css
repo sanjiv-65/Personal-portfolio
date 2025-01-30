@@ -9,6 +9,7 @@ div .nav{
     border: 2px solid white;
     margin: 0 101px;
     padding: 0 10px;
+    
     border-radius: 15px;
     width: 75vw;
     display: flex;
@@ -32,7 +33,7 @@ div .nav{
     align-items:flex-start;
 }
 .nav ul li a:hover{
-color: rgb(31, 108, 68);
+color:rgb(34, 117, 161);
 font-size: 1.04rem;
 }
 
@@ -58,14 +59,16 @@ font-size: 1.04rem;
     font-size: 15px;
 }
 .leftSection .btn {
-    padding: 8px;
+    padding: 12px;
     border: 2px solid grey;
-    color: rgb(23, 24, 25);
-    background-color: white;
+    color: rgb(236, 241, 246);
+    background-color: rgb(22, 25, 86);
     cursor: pointer;
     border-radius: 7px;
 }
+.leftSection .btn:hover{
 
+}
  .rightSection img {
     height: 350px;
     width: 350px;
@@ -74,7 +77,26 @@ font-size: 1.04rem;
    
     justify-content: end;
 }
-
+.button ul{
+list-style: none;
+display: flex;
+}
+.button ul li{
+    font-size: 23px;
+    list-style: none;
+    display: flex;
+   justify-content:space-around;
+   ;
+    }
+    .section hr{
+        border: 0;
+        height: 1.2px;
+      
+        margin:40px 84px ;
+    }
+    .icons{
+        justify-content: space-around;
+    }
 .color {
     color: rgb(137, 161, 48);
 }
@@ -92,4 +114,18 @@ font-size: 1.04rem;
 }
 #element{
     color:rgb(34, 117, 161);
+}
+/* .tools{
+    display: flex;
+    row-gap: 2px;
+    justify-content: flex-start;
+} */
+.secondSection{
+    padding: 8px;
+    margin: 116px;
+    margin-left:150px ;
+    border: 2px solid white;
+    border-radius: 30px;
+    height: 7vw;
+    width: 72vw;
 }
