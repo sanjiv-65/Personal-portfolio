@@ -23,6 +23,10 @@ body {
     /* gap: 5px; */
     /* box-sizing: border-box; */
 }
+.nav a{
+    text-decoration: none;
+    color: white;
+}
 .nav{
     position: relative;
     position: sticky;
@@ -134,6 +138,20 @@ display: flex;
     row-gap: 2px;
     justify-content: flex-start;
 } */
+ .button1{
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 50px;
+    margin-left: 520px;
+    padding: 25px;
+    height: 60px;
+    width: 190px;
+    background-color: rgb(208, 213, 213);
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
  .button2{
     border: 2px solid black;
     border-radius: 50px;
@@ -153,7 +171,7 @@ display: flex;
     box-shadow: 1px 1px 20px white;
     padding: 0;
     margin: 0;
-    margin-left:20px;
+    margin-left:100px;
     /* margin-left:10px ; */
     /* border: 2px solid white; */
     border-radius: 30px;
