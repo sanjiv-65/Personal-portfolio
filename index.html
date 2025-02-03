@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
-
+       <style></style>
         <link rel="stylesheet" href="nav.css">
         <title>Sanjiv-portpofolio</title>
     </head>
@@ -55,8 +55,7 @@
                             Everytime I code to make it litle easier to develop the logic.
                             with a solid foundation in aspiring <b><span style="color:rgb(17, 17, 239)">Front-end
                                 </span>and <span style="color:rgb(17, 17, 239)">Back-end</span>
-                                development and a strong focus on<span style="color:rgb(17, 17, 239)">
-                                    <BR>REST-APIs</span>.
+                                development and a strong focus on<span style="color:rgb(17, 17, 239)">REST-APIs</span>.
                                 I have experience working with<span style="color:rgb(17, 17, 239)"> JavaScript </span>,
                                 <span style="color:rgb(17, 17, 239)"> React </span>,<span
                                     style="color:rgb(17, 17, 239)"> Node.js </span>,
@@ -103,12 +102,45 @@
                 <div>
                     <h2> Contact Me </h2>
                 </div>
-                <div><img src="envelope-logo.png">
-                   <a src="+917735107105"> <img src="phone-call-logo.png"></a>
+                <div><a href="sanjiv105@gmail.com">
+                    <img src="envelope-logo.png" alt="Email Icon" />
+                  </a>
+                  <a href="tel:+917735107105">
+                    <img src="phone-call-logo.png" alt="Call Now" />
+                  </a>
+                  
+                  
                 </div>
                 <div class="button5"> <img src="pp04.jpg"></div>
             </div>
         </section>
+        <script>
+            document.querySelector('.button2').addEventListener('click', function() {
+              var section = document.querySelector('.thirdSection');
+              var button = document.querySelector('.button2');
+          
+              if (section.style.display === 'none' || section.style.display === '') {
+                section.style.display = 'block'; // Show section
+                setTimeout(function() {
+                  section.style.opacity = '1'; // Fade-in effect
+                  section.style.transform = 'translateY(0)'; // Move to normal position
+                }, 10); // Small delay to ensure display:block is applied first
+          
+                button.textContent = 'Hide'; // Change button text to "Hide"
+                button.classList.add('hide'); // Change button color to red
+              } else {
+                section.style.opacity = '0'; // Fade-out effect
+                section.style.transform = 'translateY(-20px)'; // Slide up effect
+                setTimeout(function() {
+                  section.style.display = 'none'; // Hide section after fade-out and slide-up
+                }, 500); // Delay to match the transition time
+          
+                button.textContent = 'Connect With Me'; // Revert button text to original
+                button.classList.remove('hide'); // Revert button color
+              }
+            });
+          </script>
+          
         <section class="fourthSection" id="education">
             <div class="button6">
                 <h1> Education</h1>
@@ -202,12 +234,22 @@
             </div>
         </footer>
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+
         <script>
             var typed = new Typed('#element', {
                 strings: ['Sanjiv Kumar Mahato', '&amp; I am a Web Developer'],
                 typeSpeed: 50,
+                loop: true,  // This will make the animation run infinitely
+                backDelay: 1000, // Optional: Delay before starting to delete and re-type
+                backSpeed: 30, // Optional: Speed of deleting the text
             });
         </script>
+        
+
+
+
 </body>
 
 </html>
